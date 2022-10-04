@@ -21,3 +21,4 @@ def numerospares(num):
         numpar=numpar+2
 num=int(input("numero"))
 
+print(num)
