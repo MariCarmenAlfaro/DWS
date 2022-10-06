@@ -14,8 +14,8 @@
 
             <div class="primera_columna">
                 <ul class="listaAct">
-                    <li class="act"> <a href="pagina1.html">Ejercicio 1</a> </li>
-                    <li class="act"> <a href="">Ejercicio 2</a></li>
+                <li class="act"> <a href="hola_mundo.php">Prueba Hola Mundo</a> </li>
+                    <li class="act"> <a href="hola_mundo_comentarios.php">Probando comentarios</a></li>
                 </ul>
             </div>
             <div class="segunda_columna"> <p>

@@ -21,6 +21,19 @@
             <div class="segunda_columna"> <p>
                 <?php
                     echo "Hola mundo!";
+                    ECHO "Hola Mundo! <br>";
+                    print "pasa1 :) ";
+
+                    //Una variable
+
+                    $color ="rojo";
+                    echo "Mi coche es ". $color . "<br>";
+                    //Esto es uncomentario de una linea
+                    /*Comentario de varias lineas
+                    Primera linea
+                    Segunda linea
+                    
+                    */
                 ?>
                 </p></div>
             <div class="tercera_columna">assas</div>
