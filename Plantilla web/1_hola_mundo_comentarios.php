@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Esto es el titulo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="contenedor">
@@ -14,8 +14,8 @@
 
             <div class="primera_columna">
             <ul class="listaAct">
-                <li class="act"> <a href="hola_mundo.php">Prueba Hola Mundo</a> </li>
-                    <li class="act"> <a href="hola_mundo_comentarios.php">Probando comentarios</a></li>
+                    
+            <li class="act"> <a href="1_hola_mundo_comentarios.php">Probando comentarios</a></li>
                 </ul>
             </div>
             <div class="segunda_columna"> <p>
