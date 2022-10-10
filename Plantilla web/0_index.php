@@ -6,7 +6,7 @@
 <body>
     <div class="contenedor">
         <div class="primera_caja">
-            <a href="index.php">INICIO</a> <br>
+            <a href="0_index.php">INICIO</a> <br>
             <a href="pagina1.html">Primera página</a> <br>
             <a href="pagina2.html">Segunda página</a>
         </div>
@@ -18,7 +18,8 @@
                     <li class="act" > <a href="2_variables y tipos.php"> Variables y tipos</a></li>
                     <li class="act"><a href="3_arrays_bucles.php">Arrays y bucles</a></li>
                     <li class="act"><a href="4_constantes.php">Constantes</a></li>
-                    <li class="act"><a href="5_superConstantes.php">Super constantes</a></li>
+                    <li class="act"><a href="5_superGlobales.php">Super constantes</a></li>
+                    <li class="act"><a href="6_validar_get.php">Super constantes</a></li>
 
 
                 </ul>

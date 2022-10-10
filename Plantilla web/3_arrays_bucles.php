@@ -11,7 +11,7 @@
 <body>
     <div class="contenedor">
         <div class="primera_caja">
-            <a href="index.php">INICIO</a> <br>
+            <a href="0_index.php">INICIO</a> <br>
             <a href="pagina1.html">Primera página</a> <br>
             <a href="pagina2.html">Segunda página</a>
         </div>

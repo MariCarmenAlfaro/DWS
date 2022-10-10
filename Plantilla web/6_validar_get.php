@@ -19,37 +19,27 @@
                     <li class="act"><a href="3_arrays_bucles.php">Arrays y bucles</a></li>
                     <li class="act"><a href="4_constantes.php">Constantes</a></li>
                     <li class="act"><a href="5_superGlobales.php">Super constantes</a></li>
+                    <li class="act"><a href="6_validar_get.php">Super constantes</a></li>
+
 
                 </ul>
             </div>
             <div class="segunda_columna"> <p>
                 <?php
-                   function obtenerInformacion($variable)
+                   //Que mejorarias de este codigo
+
+
+                   echo $str;
+
+                   function validarParametro($valor)
                    {
-                    $cadena='[ ';
-                    foreach($variable as $key=>$val)
-                    {
-                        $cadena.=$key.'=>'.$val.",<br>";
-                    
-                    }
-                    $cadena.=']';
-                    return $cadena;
+                    $res="-";
+                    $valor =htmlspecialchars($_GET["valor"]);
+                    if(isset($valor))
+                        $res=$valor;
+                    return $res;
                    }
                 ?>
-                <?php
-                //+Tarea con solución: ¿Cómo mostrar uno de los valores de una de las variables?
-               echo 'Variable $_SERVER[]'. $_GET["HTTP_SERVER_AGENT"]."<br>";
-                echo 'Variable $_GET'. obtenerInformacion($_GET)
-            
-                ?>
-                <!--
-                    Prueba a ejecutar el script con otra 
-                    $_GLOBALS
-                    $_GET
-                    $_POST
-                    $_REQUEST
-                    $_ENV
-                -->
                 </p></div>
             <div class="tercera_columna">assas</div>
             
