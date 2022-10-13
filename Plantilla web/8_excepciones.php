@@ -22,14 +22,24 @@
                     <li class="act"><a href="6_validar_get.php">Super constantes</a></li>
                     <li class="act"><a href="7_pruebaGET.php">Prueba GET</a></li>
                     <li class="act"><a href="8_excepciones.php">Excepciones</a></li>
-                    <li class="act"><a href="calculadora.php">Calculadora</a></li>
 
 
                 </ul>
             </div>
             <div class="segunda_columna"> <p>
                 <?php
-                    echo "Hola mundo!";
+                ini_set('display_errors', 'On');
+                ini_set('html_errors', 0);
+                try{
+                    $numero=10;
+                    echo "Resultado: ".$numero/0;
+                }
+                catch(DivisionByZeroError $e)
+                {
+                    echo "ERROR: $e";
+                }
+                 // phpinfo(); te da informacion del sistema
+                phpinfo();
                 ?>
                 </p></div>
             <div class="tercera_columna"><3</div>
@@ -37,7 +47,7 @@
 
 
         </div>
-        <div class="tercera_caja"><3</div>
+        <div class="tercer_caja"><3</div>
         <div class="pieDePagina">Pie de página</div>
     <div>
 </body>

@@ -29,7 +29,7 @@
             </div>
             <div class="segunda_columna"> <p>
                 <?php
-                    echo "Hola mundo!";
+                   
                 ?>
                 </p></div>
             <div class="tercera_columna"><3</div>

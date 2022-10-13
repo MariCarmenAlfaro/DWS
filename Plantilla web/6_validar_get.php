@@ -39,6 +39,15 @@
                         $res=$valor;
                     return $res;
                    }
+                   function obtenerParametro($parametro)
+                   {
+                    $result ="";
+                    if(!empty($_GET[$parametro]))
+                    {
+                        $result=$_GET[$parametro]
+                    }
+                    return $result;
+                   }
                 ?>
                 </p></div>
             <div class="tercera_columna">assas</div>
