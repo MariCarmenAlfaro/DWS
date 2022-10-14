@@ -44,7 +44,7 @@
                     $result ="";
                     if(!empty($_GET[$parametro]))
                     {
-                        $result=$_GET[$parametro]
+                        $result=$_GET[$parametro];
                     }
                     return $result;
                    }

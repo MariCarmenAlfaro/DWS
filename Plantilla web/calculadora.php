@@ -29,6 +29,7 @@
             </div>
             <div class="segunda_columna"> <p>
                 <?php
+                   calculoFactorial($_GET('numero'));
                    
                 ?>
                 </p></div>

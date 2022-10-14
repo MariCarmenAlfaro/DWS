@@ -1,45 +1,40 @@
 import math
 <?php
+
+use LDAP\Result;
+
 ini_set('display_errors', 'On');
 ini_set('html_errors', 0);
-function
+function calculoFactorial($numero)
 {
-    calculoFactorial($numero)
-    try
-    {
-        $result=0;
+    $result=0;
+    try{
+        
         if($numero==0)
         {
             return 1;
         }
         elseif($numero>0)
         {
-        result=1;
+            while($numero>0)
+            {
+                $result=$result*$numero;
+            }
+            return $result;
+        }else{
+            return 'Debe ser mayor que 0';
         }
-        {
-
-        }
+       echo $result;
+       
     }
     catch(ValueError $e)
     {
-    echo "ERROR: $e";
+    echo "ERROR: ".$e;
     }
 }
 
 
 
-
-def factorial_while_loop(x):
-    if (x==0):
-        return 1
-    elif (x>0):
-        result = 1
-        while x > 0:
-            result = result * x
-            x = x - 1
-        return result
-    else:
-        raise ValueError('El valor de x ha de ser >=0.')
 
 
 
