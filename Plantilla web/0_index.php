@@ -22,7 +22,7 @@
                     <li class="act"><a href="6_validar_get.php">Super constantes</a></li>
                     <li class="act"><a href="7_pruebaGET.php">Prueba GET</a></li>
                     <li class="act"><a href="8_excepciones.php">Excepciones</a></li>
-                    <li class="act"><a href="calculadora.php">Calculadora</a></li>
+                    <li class="act"><a href="ejercicios/calculadora.php">Calculadora</a></li>
                     <li class="act"><a href="ejercicio01.php">Ejercicio 1</a></li>
 
 
