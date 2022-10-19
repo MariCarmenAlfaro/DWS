@@ -39,16 +39,61 @@ class Calculadora
 
     public function coeficienteBinomial($n, $k)
     {
-       $resultado=0;
+        $resultado = 0;
         if (($n - $k) < 0) {
-           return $resultado;
+            return $resultado;
         } else {
-           $resultado= $this->calculoFactorial($n) / $this->calculoFactorial($k) * $this->calculoFactorial($n - $k);
+            $resultado = $this->calculoFactorial($n) / $this->calculoFactorial($k) * $this->calculoFactorial($n - $k);
         }
         return $resultado;
     }
 
-    public function convierteBinarioDecimal($cadenaBits){
-        
+    public function convierteBinarioDecimal($cadenaBits)
+    {
+        $longuitud = strlen($cadenaBits);
+        $cadenaInversa = strrev($cadenaBits);
+        $resultadoDecimal = 0;
+        for ($i = 0; $i < $longuitud; $i++) {
+            $resultado =  (2 ** $i) * $cadenaInversa[$i] + $resultadoDecimal;
+        }
+        return $resultadoDecimal;
+    }
+
+    public function sumaNumerosPares($array)
+    {
+        $suma = 0;
+        for ($i = 0; $i < count($array); $i++) {
+            if ($array[$i] % 2 == 0) {
+                $suma = $suma + $array[$i];
+            }
+        }
+        return $suma;
+    }
+
+    public function siCapcua($cadena)
+    {
+        var_dump($cadena);
+        $cadenaInvertida = strrev($cadena);
+
+        if ($cadena == $cadenaInvertida) {
+            return true;
+        } else {
+            return "0";
+        }
+    }
+    public function sumaMatrices($primera_matriz, $segunda_matriz)
+    {
+        $suma = array();
+        if (count($primera_matriz) === count($segunda_matriz)) {
+            for ($i = 0; $i < count($primera_matriz); $i++) {
+                $suma[] = array();
+                if (count($primera_matriz[$i]) === count($segunda_matriz[$i])) {
+                    for ($j = 0; $j < count($primera_matriz[$i]); $j++) {
+                        $suma[$i][] = $primera_matriz[$i][$j] + $segunda_matriz[$i][$j];
+                    }
+                }
+            }
+        }
+        return $suma;
     }
 }
