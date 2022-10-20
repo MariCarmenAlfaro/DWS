@@ -83,17 +83,16 @@ class Calculadora
     }
     public function sumaMatrices($primera_matriz, $segunda_matriz)
     {
-        $suma = array();
-        if (count($primera_matriz) === count($segunda_matriz)) {
+    
+        $suma = $primera_matriz;
+ 
             for ($i = 0; $i < count($primera_matriz); $i++) {
-                $suma[] = array();
-                if (count($primera_matriz[$i]) === count($segunda_matriz[$i])) {
                     for ($j = 0; $j < count($primera_matriz[$i]); $j++) {
-                        $suma[$i][] = $primera_matriz[$i][$j] + $segunda_matriz[$i][$j];
+                        $suma[$i][$j] = $primera_matriz[$i][$j] + $segunda_matriz[$i][$j];
                     }
                 }
-            }
-        }
+            
+        
         return $suma;
-    }
+        }
 }

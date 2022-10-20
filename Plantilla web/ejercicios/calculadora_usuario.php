@@ -29,18 +29,29 @@
                     echo '<br/>';
                     echo 'Tu número binario en decimal: ' . $prueba1->convierteBinarioDecimal('011101');
                     echo '<br/>';
-                    $array = array(2, 3, 5, 7, 8,9, 6, 10);
+                    $array = array(2, 3, 5, 7, 8, 9, 6, 10);
                     echo 'Número total de pares en el array: ' . $prueba1->sumaNumerosPares($array);
                     echo '<br/>';
                     echo 'Saber si es capicua o no: ' . $prueba1->siCapcua("hfd");
                     echo '<br/>';
-                    $primera_matriz=array(
-                        array(5,4,9,6),
-                        array(2,8,9,6)
-                      );
-                    $segunda_matriz=array(array(4,9,67,100),array(85,9,67,8));
-                    echo 'Matriz final: ' . $prueba1->sumaMatrices($primera_matriz,$segunda_matriz);
-                    ?>
+                    $primera_matriz = array(
+                        array(1,1 ,1 , 1),
+                        array(1, 1, 1, 1)
+                    );
+                    $segunda_matriz = array(
+                        array(2, 2, 2, 2),
+                        array(2, 2, 2, 2)
+                    );
+                    echo 'Matriz final: ' ;
+                    $resultadoFinal=$prueba1->sumaMatrices($primera_matriz, $segunda_matriz);
+
+                    for ($i = 0; $i < count($primera_matriz); $i++) {
+                        for ($j = 0; $j < count($primera_matriz[$i]); $j++) {
+                          echo $resultadoFinal[$i][$j];
+                        }
+              
+                  }
+                  ?>
                 </p>
             </div>
             <div class="tercera_columna"></div>
