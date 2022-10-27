@@ -22,8 +22,9 @@
     $cuadrado1 = new Cuadrado();
    // echo $cuadrado1->analizarCuadradoMagico($cuadrado1::$filaPrimera);
     $cuadrado1->pintarCuadradoMagico($numeros);
-    print_r($cuadrado1->sumarFilas($numeros)) ;
-    print_r($cuadrado1->sumarColumnas($numeros)) ;
+    $cuadrado1->analizarCuadradoMagico($numeros) ;
+    
+
     ?>
 
 
