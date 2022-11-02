@@ -11,6 +11,7 @@
 
 <body>
     <h1>CUADRADO MÁGICO</h1>
+    <h2 class=""></h2>
     <?php
     require('cuadrado_magico.php');
     $tablero = [
@@ -21,12 +22,14 @@
 
     $cuadrado1 = new Cuadrado($tablero);
    // echo $cuadrado1->analizarCuadradoMagico($cuadrado1::$filaPrimera);
-    pintarCuadradoMagico($tablero);
+    
   analizarCuadradoMagico($tablero) ;
-  /*  print_r( $CuadradoPerfecto->sumarFilas($numeros));
+  pintarCuadradoMagico($tablero,$cuadrado1);
+  /* print_r( $CuadradoPerfecto->sumarFilas($numeros));
     print_r( $CuadradoPerfecto->sumarColumnas($numeros));
     print_r( $CuadradoPerfecto->sumarDiagonalPrimera($numeros));
     print_r( $CuadradoPerfecto->sumarDiagonalSegunda($numeros));*/
+   
 
 
     ?>

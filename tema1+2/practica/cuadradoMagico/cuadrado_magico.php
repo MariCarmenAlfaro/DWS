@@ -1,48 +1,93 @@
 <?php
 class Cuadrado
 {
-    private $tablero;
-    private $siEsmagico;
-    private $sumaFilas;
-    private $sumaColumanas;
-    private $diagonal1;
-    private $diagonal2;
+    public $tablero;
+    public $siEsmagico = true;
+    public $sumaFilas = true;
+    public $filaIncorrecta;
+    public $sumaColumnas = true;
+    public $columnaIncorrecta;
+    public $diagonal1 = true;
+    public $diagonal1Incorrecta;
+    public $diagonal2 = true;
+    public $diagonal2Incorrecta;
     function __construct($tablero)
     {
         $this->$tablero = $tablero;
     }
-
 }
 function analizarCuadradoMagico($tablero)
 {
-
+    $cuadradoFinal = new Cuadrado($tablero);
 
     $arrayFilas =  sumarFilas($tablero);
-    $incorrectos = [];
-
-    for ($i = 0; $i < count($arrayFilas); $i++) {
-        if ($arrayFilas[$i] != $arrayFilas[0]) {
-            $incorrectos[$i] = $arrayFilas[$i];
+    $cuadradoFinal->filaIncorrecta = [];
+    $filaLider=0;
+    for ($i = 0; $i < count($tablero); $i++) {
+        $filaLider=$arrayFilas[0];
+        if ($arrayFilas[$i] != $filaLider) {
+            $cuadradoFinal->sumaFilas = false;
+            $cuadradoFinal->filaIncorrecta[$i] = $arrayFilas[$i];
         }
     }
-    echo $incorrectos;
+   
+    $arrayColumnas = sumarColumnas($tablero);
+    $cuadradoFinal->columnaIncorrecta = [];
+    for ($i = 0; $i < count($tablero); $i++) {
+        if ($arrayColumnas[$i] != $filaLider) {
+            $cuadradoFinal->sumaColumnas = false;
+            $cuadradoFinal->columnaIncorrecta[$i]=$arrayColumnas[$i];
+        }
+    }
+    
+    $diagonal1 = sumarDiagonalPrimera($tablero);
+    if ($diagonal1 != $filaLider) {
+        $cuadradoFinal->diagonal1 = false;
+       
+    }
 
-}  
+    $diagonal2 = sumarDiagonalSegunda($tablero);
+    if ($diagonal2[$i] != $filaLider) {
+        $cuadradoFinal->diagonal2 = false;
+        
+    }
 
-function pintarCuadradoMagico($tablero)
+    if (
+        $cuadradoFinal->sumaFilas == true && $cuadradoFinal->sumaColumnas == true &&
+        $cuadradoFinal->diagonal1 == true && $cuadradoFinal->diagonal2 == true
+    ) {
+        $cuadradoFinal->siEsmagico = true;
+    } else {
+        $cuadradoFinal->siEsmagico = false;
+    }
+
+    //echo $cuadradoFinal->siEsmagico;
+    return $cuadradoFinal;
+}
+
+function pintarCuadradoMagico($tablero, $cuadradoFinal)
 {
     echo '<table>';
     for ($filas = 0; $filas < count($tablero); $filas++) {
         echo '<tr>';
-        for ($columnas = 0; $columnas < 3; $columnas++) {
+        for ($columnas = 0; $columnas < count($tablero[$filas]); $columnas++) {
             echo '<td>' . $tablero[$filas][$columnas] . '</td>';
         }
         echo '</tr>';
     }
     echo '<table>';
+   // echo $cuadradoFinal->s
+   if($cuadradoFinal->siEsmagico){
+    echo "<p class='esMagico'>SI ES UN CUADRADO MAGICO</p>";
+   }else{
+    echo "<p class='noEsMagico'>NO ES UN CUADRADO MAGICO</p>";
+    if($cuadradoFinal->sumaFilas==false){
+        echo "Las filas incorrectas son ".$cuadradoFinal->filaIncorrecta[];
+    } 
+   }
 }
 
-function sumarFilas($tablero/*, &$filaPrimera*/)
+function sumarFilas($tablero)
 {
 
     $filas = [];
@@ -51,6 +96,7 @@ function sumarFilas($tablero/*, &$filaPrimera*/)
         for ($columna = 0; $columna < count($tablero[$fila]); $columna++) {
             $suma = $suma + $tablero[$fila][$columna] . "\n";
         }
+        $filas[$fila] = $suma;
     }
 
     return $filas;
@@ -64,10 +110,11 @@ function sumarColumnas($tablero)
         $suma = 0;
         for ($fila = 0; $fila < count($tablero[$columna]); $fila++) {
 
-            $suma = $suma + $tablero[$fila][$columna] . "\n";
-            $columnas[$columna] = $suma;
+            $suma = $suma + $tablero[$fila][$columna];
         }
+        $columnas[$columna] = $suma;
     }
+
     return $columnas;
 }
 
