@@ -1,47 +1,55 @@
 <html>
+
 <head>
-    <title>Esto es el titulo</title>
-    <link rel="stylesheet" href="estilos_carteleria.css">
+    <title>CARTELERÍA</title>
+<script language="javascript">alert("juas");</script>';
+    <link rel="stylesheet" href="estilos_barbie.css">
 </head>
+
 <body>
+
     <div class="contenedor">
         <div class="primera_caja">
             <a href="0_index.php">INICIO</a> <br>
-            <a href="pagina1.html">Primera página</a> <br>
-            <a href="pagina2.html">Segunda página</a>
+            <p>Elige el género cinematográfico.</p>
+                <form>
+                    <select id="generos" name="generos">
+                        <option value="Terror">Terror</option>
+                        <option value="Barbie">Barbie</option>
+                       
+                    </select>
+                </form>
         </div>
         <div class="segunda_caja">
 
             <div class="primera_columna">
                 <ul class="listaAct">
-                    <li class="act"> <a href="1_hola_mundo_comentarios.php">Probando comentarios</a></li>
-                    <li class="act" > <a href="2_variables y tipos.php"> Variables y tipos</a></li>
-                    <li class="act"><a href="3_arrays_bucles.php">Arrays y bucles</a></li>
-                    <li class="act"><a href="4_constantes.php">Constantes</a></li>
-                    <li class="act"><a href="5_superGlobales.php">Super constantes</a></li>
-                    <li class="act"><a href="6_validar_get.php">Super constantes</a></li>
-                    <li class="act"><a href="7_pruebaGET.php">Prueba GET</a></li>
-                    <li class="act"><a href="8_excepciones.php">Excepciones</a></li>
-                    <li class="act"><a href="ejercicios/calculadora.php">Calculadora</a></li>
-                    <li class="act"><a href="ejercicio01.php">Ejercicio 1</a></li>
+                    <li class="act"> <a href="">Peliculas de Terror</a></li>
+                    <li class="act"> <a href="">Peliculas de Barbie</a></li>
 
 
                 </ul>
             </div>
-            <div class="segunda_columna"> <p>
+            <div class="segunda_columna">
+                <p>
+              
                 <?php
-                require('carteleria.php')
-                    
+                require('carteleria.php');
+                $peli = new Pelicula("Barbie en La princesa y la costurera", "La mítica muñeca Barbie cobra vida en esta moderna versión del cuento de Mark Twain \"El Príncipe y el Mendigo\" sobre un error de identidad y el poder de la amistad. Con la voz de Gisela como Barbie cantando siete temas originales llega la primera película musical de Barbie interpretando además un doble papel.", "imgs/img1.jpg");
+                $peli->pintarPeli();
                 ?>
-                </p></div>
-            <div class="tercera_columna"><3</div>
-            
+                </p>
+            </div>
+            <div class="tercera_columna">
+                <3< /div>
 
 
-        </div>
-        <div class="tercera_caja"><3</div>
-        <div class="pieDePagina">Pie de página</div>
-    <div>
+
+            </div>
+            <div class="tercera_caja">
+                <3< /div>
+                    <div class="pieDePagina">Pie de página</div>
+                    <div>
 </body>
-</html>
 
+</html>
