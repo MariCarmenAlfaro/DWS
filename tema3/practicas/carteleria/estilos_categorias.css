@@ -1,0 +1,37 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-image: url(imgs/sala-de-cine.webp);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: aliceblue;
+   background-attachment: fixed;
+   background-position: center;
+}
+
+h1 {
+   margin: 2% 0;
+   background-color: white;
+   text-align: center;
+}
+
+.contenedorLista {
+   float: left;
+   width: 100%;
+   text-align: center;
+}
+
+.listaCategorias {
+   list-style: none;
+   font-size: x-large;
+   margin: 1%;
+
+}
+
+.generos a {
+   background-color: white;
+   text-decoration: none;
+}
