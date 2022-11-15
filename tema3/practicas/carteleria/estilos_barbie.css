@@ -4,77 +4,46 @@
 }
 
 /* margin es el margen exterior. padding, margen interior */
-.primera_caja {
+.barraNavegacion {
     background-color: rgb(255, 209, 240);
-    height: 25%;
+    height: 20%;
+    padding: 5px;
+    font-family: 'Sevillana', cursive;
+    font-weight: bold;
+    font-size: 30px;
 }
 
-.segunda_caja {
+.cuerpo {
     background-color: rgb(255, 153, 209);
-    height: 50%;
+    height: 70%;
 }
 
-.tercera_caja {
+.piePag {
     background-color: rgb(255, 209, 240);
-    height: 25%;
+    height: 10%;
 }
 
-.primera_columna {
+.indiceIzq{
     float: left;
     height: 100%;
-    width: 28%;
+    width: 25%;
     background-color: rgb(255, 153, 209);
 
 }
 
-.listaAct {
-    padding: 10%;
-    list-style: none;
-    color: black;
-}
-
-.act {
-    padding: 2%;
-    color: black;
-}
-
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    color: black;
-    text-decoration: underline;
-}
-
-
-a:hover {
-    color: white;
-}
-
-a:active {
-    color: hotpink;
-}
-
-.segunda_columna {
+.datosPag {
     float: left;
     height: 100%;
-    width: 44%;
+    width: 50%;
     background-color: white;
 }
 
-.tercera_columna {
+.indicederecho{
     float: left;
     height: 100%;
-    width: 28%;
+    width: 25%;
     background-color: rgb(255, 153, 209);
     
-}
-
-.pieDePagina {
-    height: 10%;
-    width: 100%;
 }
 
 .contenedor {
@@ -83,9 +52,31 @@ a:active {
     width: 100%;
 }
 .individuales{
+    font-family: 'Sevillana', cursive;
     border: 2px solid rgb(248, 0, 145);
     padding: 5px;
+    margin: 20px 8px;
+    position: relative;
+}
+.votos{
+position: absolute;
+
 }
 .titulo{
     font-weight: bold;
 }
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+ }
+ a:visited{
+    color: black;
+ }
+ a:hover{
+    color: rgb(255, 0, 255);
+ }
+ a:active{
+    color: rgb(172, 0, 157)
+ }
