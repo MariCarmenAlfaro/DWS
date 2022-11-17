@@ -4,81 +4,102 @@
 }
 
 /* margin es el margen exterior. padding, margen interior */
-.primera_caja {
-    background-color: blue;
-    height: 25%;
-}
+.barraNavegacion {
+    background-color: black;
+    height: 20%;
+    padding: 5px;
+    font-family: 'Metal Mania', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    background-image: url(terror.jpg);
+    background-size: cover;
 
-.segunda_caja {
-    background-color: rgb(255, 153, 209);
-    height: 50%;
-}
 
-.tercera_caja {
-    background-color: rgb(255, 209, 240);
-    height: 25%;
-}
 
-.primera_columna {
-    float: left;
-    height: 100%;
-    width: 28%;
-    background-color: rgb(255, 153, 209);
 
 }
 
-.listaAct {
-    padding: 10%;
-    list-style: none;
-    color: black;
-}
-
-.act {
-    padding: 2%;
-    color: black;
-}
-
-a:link {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    color: black;
-    text-decoration: underline;
-}
-
-
-a:hover {
-    color: white;
-}
-
-a:active {
-    color: hotpink;
-}
-
-.segunda_columna {
-    float: left;
-    height: 100%;
-    width: 44%;
-    background-color: white;
-}
-
-.tercera_columna {
-    float: left;
-    height: 100%;
-    width: 28%;
-    background-color: rgb(255, 153, 209);
+.cuerpo {
+    background-color: rgb(29, 75, 29);
+    height: 70%;
+    width: 100%;
     
 }
 
-.pieDePagina {
-    height: 10%;
-    width: 100%;
+.piePag {
+    background-color: rgb(27, 59, 27);
+    min-height: 10%;
+    background-image: url(terror.jpg);
+    background-size: cover;
+
+}
+
+.indiceIzq {
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(177, 221, 177,0.705)
+   
+}
+
+.datosPag {
+    float: left;
+    min-height: 100%;
+    width: 70%;
+    background-color: rgba(177, 221, 177, 0.705);
+   
+}
+
+.indicederecho {
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-color: rgb(177, 221, 177,0.705);
+
 }
 
 .contenedor {
     background-color: black;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
+    overflow: scroll;
+}
+
+.individuales {
+    font-family: 'Metal Mania', cursive;
+    border: 2px solid darkred;
+    padding: 5px;
+    margin: 20px 8px;
+    position: relative;
+}
+
+.votos {
+    position: absolute;
+    right: 15%;
+    bottom: 3%;
+
+}
+
+.titulo {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(15, 119, 15);
+}
+
+a:visited {
+    color: rgb(15, 119, 15);
+}
+
+a:hover {
+    color: darkred;
+}
+
+a:active {
+    color: red
 }

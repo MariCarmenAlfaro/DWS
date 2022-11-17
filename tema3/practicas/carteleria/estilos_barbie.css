@@ -11,6 +11,11 @@
     font-family: 'Sevillana', cursive;
     font-weight: bold;
     font-size: 30px;
+    background-image: url(confeti.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .cuerpo {
@@ -21,12 +26,17 @@
 .piePag {
     background-color: rgb(255, 209, 240);
     height: 10%;
+    background-image: url(confeti.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.indiceIzq{
+.indiceIzq {
     float: left;
     height: 100%;
-    width: 25%;
+    width: 20%;
     background-color: rgb(255, 153, 209);
 
 }
@@ -34,16 +44,16 @@
 .datosPag {
     float: left;
     height: 100%;
-    width: 50%;
+    width: 60%;
     background-color: white;
 }
 
-.indicederecho{
+.indicederecho {
     float: left;
     height: 100%;
-    width: 25%;
+    width: 20%;
     background-color: rgb(255, 153, 209);
-    
+
 }
 
 .contenedor {
@@ -51,32 +61,42 @@
     height: 100%;
     width: 100%;
 }
-.individuales{
+
+.individuales {
     font-family: 'Sevillana', cursive;
     border: 2px solid rgb(248, 0, 145);
     padding: 5px;
     margin: 20px 8px;
     position: relative;
 }
-.votos{
-position: absolute;
+
+.votos {
+    position: absolute;
+    right: 15%;
+    bottom: 3%;
 
 }
-.titulo{
+
+.titulo {
     font-weight: bold;
 }
-a{
+
+a {
     text-decoration: none;
 }
-a:link{
+
+a:link {
     color: black;
- }
- a:visited{
+}
+
+a:visited {
     color: black;
- }
- a:hover{
+}
+
+a:hover {
     color: rgb(255, 0, 255);
- }
- a:active{
+}
+
+a:active {
     color: rgb(172, 0, 157)
- }
+}
