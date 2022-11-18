@@ -5,6 +5,7 @@
 
 /* margin es el margen exterior. padding, margen interior */
 .barraNavegacion {
+  
     background-color: rgb(255, 209, 240);
     height: 20%;
     padding: 5px;
@@ -12,30 +13,32 @@
     font-weight: bold;
     font-size: 30px;
     background-image: url(confeti.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-size:  cover;
+ 
 }
+
 
 .cuerpo {
     background-color: rgb(255, 153, 209);
-    height: 70%;
+    height: 75%;
+    width: 100%;
 }
 
 .piePag {
     background-color: rgb(255, 209, 240);
     height: 10%;
     background-image: url(confeti.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+ 
+  
+    
 }
-
+.piePagFicha{
+    height: 5%;
+    background-color: rgb(255, 153, 209);
+}
 .indiceIzq {
     float: left;
-    height: 100%;
+    min-height: 100%;
     width: 20%;
     background-color: rgb(255, 153, 209);
 
@@ -43,14 +46,14 @@
 
 .datosPag {
     float: left;
-    height: 100%;
+    min-height: 100%;
     width: 60%;
     background-color: white;
 }
 
 .indicederecho {
     float: left;
-    height: 100%;
+    min-height: 100%;
     width: 20%;
     background-color: rgb(255, 153, 209);
 
@@ -72,31 +75,41 @@
 
 .votos {
     position: absolute;
-    right: 15%;
-    bottom: 3%;
+    right: 10%;
+    top: 3%;
+
 
 }
 
 .titulo {
     font-weight: bold;
 }
-
-a {
+.tituloFicha{
+    font-size: 300%;
+    text-align: center;
+    font-weight: bold;
+}
+.imagenFicha{
+    text-align: center;
+}
+.inicio:link, .inicio:visited {
     text-decoration: none;
+     color: black;
 }
 
-a:link {
-    color: black;
-}
-
-a:visited {
-    color: black;
-}
-
-a:hover {
+.inicio:hover {
     color: rgb(255, 0, 255);
 }
 
-a:active {
+.inicio:active {
+    color: rgb(172, 0, 157)
+}
+
+.fichaGrande:link, .fichaGrande:visited {
+    position: absolute;
+    right: 10%;
+    color: rgb(255, 0, 255);
+}
+.fichaGrande:hover, .fichaGrande:active {
     color: rgb(172, 0, 157)
 }
