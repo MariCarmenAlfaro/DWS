@@ -50,7 +50,11 @@
     width: 60%;
     background-color: white;
 }
-
+.imagen{
+    width: 20%;
+    overflow: auto;
+    display: block;
+}
 .indicederecho {
     float: left;
     min-height: 100%;

@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div class="contenedor">
+<div class="contenedor">
         <div class="barraNavegacion">
             <a href="categorias.php" class="inicio">Inicio</a>
 
@@ -29,75 +29,75 @@
         <div class="cuerpo">
 
             <div class="indiceIzq"></div>
-            <div class="datosPag">
-                <?php
-                class Pelicula
-                {
-                    public $titulo;
-                    public $descripcion;
-                    public $imagen;
-                    function __construct($titulo, $descripcion, $imagen)
-                    {
-                        $this->titulo = $titulo;
-                        $this->descripcion = $descripcion;
-                        $this->imagen = $imagen;
-                    }
+            <div class="datosPag"><?php
+                                    class Pelicula
+                                    {
+                                        public $titulo;
+                                        public $descripcion;
+                                        public $imagen;
+                                        function __construct($titulo, $descripcion, $imagen)
+                                        {
+                                            $this->titulo = $titulo;
+                                            $this->descripcion = $descripcion;
+                                            $this->imagen = $imagen;
+                                        }
+                                        function pintarPeli()
+                                        {
+                    
+                                            echo "<div class='individuales'>";
 
-                    function pintarPeli()
-                    {
+                                            echo "<div class='titulo'>" . $this->titulo . "   </div>";
 
-                        echo "<div class='individuales'>";
-                        echo "<div class='titulo'>" . $this->titulo . "   </div>";
-                        echo "<p class='votos'>Votos:</p> ";
+                                            echo "<p class='votos'>Votos:</p> ";
+                    
+                                            echo "<br/>";
 
-                        echo "<br/>";
-                        echo "<div >'<img class='imagen'  src=" . $this->imagen . " </div>";
-                        echo "<br/>";
+                                            echo "<div ><img class='imagen'  src=" . $this->imagen . "></div>";
 
-                        echo  "<div class='descripcion'>" . $this->descripcion . "</div>";
-
-                        echo "<br/>";
-                        echo "<br/>";
-                        echo "Duración: ";
-                        echo "<a href='fichaPelicula.php' class='fichaGrande'> Ver ficha</a> ";
-                        
-                        echo "</div>";
-                    }
-
-                    public function getTitulo()
-                    {
-                        return $this->titulo;
-                    }
-                    public function setTitulo($titulo)
-                    {
-                        return $this->titulo;
-                    }
-                    public function getImagen()
-                    {
-                        return $this->imagen;
-                    }
-                    public function setImagen($imagen)
-                    {
-                        return $this->titulo;
-                    }
-                    public function getDescripcion()
-                    {
-                        return $this->titulo;
-                    }
-                    public function setDescripcion($descripcion)
-                    {
-                        return $this->titulo;
-                    }
-                }
-                $peli = new Pelicula("Barbie en La princesa y la costurera",
-                 "La mítica muñeca Barbie cobra vida en esta moderna versión del cuento de Mark Twain
-                  \"El Príncipe y el Mendigo\" sobre un error de identidad y el poder de la amistad. Con
-                   la voz de Gisela como Barbie cantando siete temas originales llega la primera película
-                    musical de Barbie interpretando además un doble papel.", "imgs/img1.jpg");
-                $peli->pintarPeli();
-                $peli = new Pelicula("Barbie en La princesa y la costurera", "La mítica muñeca Barbie cobra vida en esta moderna versión del cuento de Mark Twain \"El Príncipe y el Mendigo\" sobre un error de identidad y el poder de la amistad. Con la voz de Gisela como Barbie cantando siete temas originales llega la primera película musical de Barbie interpretando además un doble papel.", "imgs/img1.jpg");
-                $peli->pintarPeli();
-                ?></div>
+                                            echo "<br/>";
+                    
+                                            echo  "<div class='descripcion'>" . $this->descripcion . "</div>";
+                    
+                                            echo "<br/>";
+                                            echo "<br/>";
+                                            echo "Duración: ";
+                                            echo "<a href='fichaPelicula.php' class='fichaGrande'> Ver ficha</a> ";
+                                            
+                                            echo "</div>";
+                                        }
+                       
+                                        public function getTitulo()
+                                        {
+                                            return $this->titulo;
+                                        }
+                                        public function setTitulo($titulo)
+                                        {
+                                            return $this->titulo;
+                                        }
+                                        public function getImagen()
+                                        {
+                                            return $this->imagen;
+                                        }
+                                        public function setImagen($imagen)
+                                        {
+                                            return $this->titulo;
+                                        }
+                                        public function getDescripcion()
+                                        {
+                                            return $this->descripcion;
+                                        }
+                                        public function setDescripcion($descripcion)
+                                        {
+                                            return $this->descripcion;
+                                        }
+                                    }
+                                    $peli = new Pelicula("Barbie en La princesa y la costurera", "La mítica muñeca Barbie cobra vida en esta moderna versión del cuento de Mark Twain \"El Príncipe y el Mendigo\" sobre un error de identidad y el poder de la amistad. Con la voz de Gisela como Barbie cantando siete temas originales llega la primera película musical de Barbie interpretando además un doble papel.", "imgs/img1.jpg");
+                                    $peli->pintarPeli();
+                                    $peli = new Pelicula("Barbie en La princesa y la costurera", "La mítica muñeca Barbie cobra vida en esta moderna versión del cuento de Mark Twain \"El Príncipe y el Mendigo\" sobre un error de identidad y el poder de la amistad. Con la voz de Gisela como Barbie cantando siete temas originales llega la primera película musical de Barbie interpretando además un doble papel.", "imgs/img1.jpg");
+                                    $peli->pintarPeli();
+                                    $peli = new Pelicula("Barbie en La princesa y la costurera", "La mítica muñeca Barbie cobra vida en esta moderna versión del cuento de Mark Twain \"El Príncipe y el Mendigo\" sobre un error de identidad y el poder de la amistad. Con la voz de Gisela como Barbie cantando siete temas originales llega la primera película musical de Barbie interpretando además un doble papel.", "imgs/img1.jpg");
+                                    $peli->pintarPeli();
+                                    ?></div>
             <div class="indiceDerecho"></div>
 
 
