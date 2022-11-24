@@ -18,7 +18,7 @@
         </div>
         <div class="cuerpo">
 
-            <div class="indiceIzq">Indice izquierdo</div>
+            <div class="indiceIzq"></div>
             <div class="datosPag"><?php
                                     class Pelicula
                                     {
@@ -37,17 +37,20 @@
 
                                             echo "<div class='individuales'>";
 
-                                            echo "<div class='imagenFicha'>'<img src=" . $this->imagen . "/div>'  </div>";
-                                            echo "<br/>";
                                             echo "<div class='tituloFicha'>" . $this->titulo . "   </div>";
-                                            echo "<br/>";
-                                            echo  "<div class='descripcion'>" . $this->descripcion . 
-                                            " </div>";
-                                            
-                                            echo "<br/>";
-                                            echo "<br/>";
-                                            echo "Duración: ";
+
                                             echo "<p class='votos'>Votos:</p> ";
+                    
+                                            echo "<br/>";
+
+                                            echo "<div ><img class='imagenFicha'  src=" . $this->imagen . "></div>";
+
+                                            echo "<br/>";
+                    
+                                            echo  "<div class='descripcion'>" . $this->descripcion . "</div>";
+                    
+                                          
+                                            
                                             echo "</div>";
                                         }
 
@@ -80,12 +83,12 @@
                                     $peli->pintarPeli();
                                   
                                     ?></div>
-            <div class="indiceDerecho">Indice derecho</div>
+            <div class="indiceDerecho"></div>
 
 
 
         </div>
-        <div class="piePagFicha">Pie de pagina</div>
+        <div class="piePagFicha"></div>
     </div>
 </body>
 </html>

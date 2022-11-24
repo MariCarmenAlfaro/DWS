@@ -15,6 +15,7 @@
     font-family: 'Metal Mania', cursive;
     font-weight: bold;
     font-size: 30px; 
+    padding: 5px;
    
 }
 
@@ -104,6 +105,9 @@
 }
 .imagenFicha{
     text-align: center;
+    width: 40%;
+    overflow: auto;
+    display: block;
 }
 .inicio:link, .inicio:visited {
     text-decoration: none; 
