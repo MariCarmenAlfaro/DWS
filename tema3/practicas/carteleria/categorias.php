@@ -15,7 +15,7 @@
     <h1>- - - CATEGORÍAS DE NUESTRA CARTELERÍA - - -</h1>
    
     <div class="contenedorLista">
-        
+
     <ul class="listaCategorias">
         <li class="generos"> <a href="peliculas.php?genero=terror">Terror</a> </li>
         <li class="generos"> <a href="peliculas.php?genero=barbie">Infantil</a> </li>
