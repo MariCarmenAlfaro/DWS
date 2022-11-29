@@ -1,7 +1,7 @@
 * {
    margin: 0;
    padding: 0;
-    
+
 }
 
 body {
@@ -17,7 +17,7 @@ body {
 h1 {
    margin: 2% 0;
    padding: 1.5%;
-   background-color: rgb(250, 200, 200);
+   background-color: rgba(250, 200, 200, 0.799);
    text-align: center;
 }
 
@@ -25,29 +25,35 @@ h1 {
    float: left;
    width: 100%;
    text-align: center;
+
+
 }
 
 .listaCategorias {
    list-style: none;
    font-size: 200%;
-   margin: 5%;
 
 }
 
-.generos a {
-   background-color: white;
+a {
+
    text-decoration: none;
+   margin-bottom: 50px;
 
 }
-a:link{
+
+a:link {
    color: black;
 }
-a:visited{
+
+a:visited {
    color: black;
 }
-a:hover{
+
+a:hover {
    color: darkred;
 }
-a:active{
+
+a:active {
    color: firebrick
 }
